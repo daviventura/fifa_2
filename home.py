@@ -14,11 +14,11 @@ st.set_page_config(
 
 
 clubes=df_data['Club'].unique()
-club=st.selectbox('Clube',clubes)
+club=st.sidebar.selectbox('Clube',clubes)
 
 df_players=df_data[df_data['Club']==club]
 jogadores=df_players['Name'].unique()
-jogador=st.selectbox('Jogador',jogadores)
+jogador=st.sidebar.selectbox('Jogador',jogadores)
 
 jogador_stats=df_data[df_data['Name']==jogador].iloc[0]
 
