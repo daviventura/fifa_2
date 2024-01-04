@@ -14,18 +14,19 @@ st.set_page_config(
 
 
 clubes=df_data['Club'].unique()
-club=st.selectbox('Clube',clubes)
 
 
 df_players=df_data[df_data['Club']==club]
 jogadores=df_players['Name'].unique()
-jogador=st.selectbox('Jogador',jogadores)
 
 
 jogador_stats=df_data[df_data['Name']==jogador].iloc[0]
 
 st.image(jogador_stats['Photo'])
 st.title(jogador_stats['Name'])
+
+club=st.selectbox('Clube',clubes)
+jogador=st.selectbox('Jogador',jogadores)
 
 st.markdown(f"**Clube:**  {jogador_stats['Club']}")
 st.markdown(f"**Posição:**  {jogador_stats['Position']}")
