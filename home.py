@@ -28,7 +28,7 @@ st.title(jogador_stats['Name'])
 
 
 st.markdown(f"**Clube:**  {jogador_stats['Club']}")
-st.markdown(f"**Posição:**  {jogador_stats['Position']}")
+# st.markdown(f"**Posição:**  {jogador_stats['Position']}")
 
 # col1,col2,col3,col4=st.columns(4)
 
