@@ -49,9 +49,6 @@ for overall in range(atributo):
 
 col1,col2,col3,col4=st.columns(4)
 
-time.sleep(0.1)
 col1.metric('Valor de Mercado',value=f"£ {jogador_stats['Value(£)']:,.2f}")
-time.sleep(0.1)
 col2.metric('Remuneração/Semana',value=f"£ {jogador_stats['Wage(£)']:,.2f}")
-time.sleep(0.1)
 col3.metric('Cláusula de Rescisão',value=f"£ {jogador_stats['Release Clause(£)']:,.2f}")
