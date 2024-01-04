@@ -43,7 +43,7 @@ overall_bar=st.progress(0,text='Overall do Jogador')
 atributo=jogador_stats['Overall']
 
 for overall in range(atributo):
-    time.sleep(0.005)
+    time.sleep(0.1)
     overall_bar.progress(overall+1,text='Overall Player')
 
 
